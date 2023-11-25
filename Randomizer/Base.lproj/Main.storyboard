@@ -79,7 +79,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Random Number" id="lJp-xv-Tbg">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape" catalog="system" id="f4u-fn-3eO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape" catalog="system" id="f4u-fn-3eO">
+                            <connections>
+                                <segue destination="DQD-I2-AiF" kind="presentation" id="27V-fc-EO5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="getRandomNumberButton" destination="BED-E9-IVb" id="alE-fm-JOg"/>
@@ -91,6 +95,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1015.2" y="-2.2488755622188905"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Icz-2U-NOD">
+            <objects>
+                <viewController id="DQD-I2-AiF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XVW-Q4-djH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="H8A-tU-Ze3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqX-Ng-OH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3t2-Ff-0vC">
