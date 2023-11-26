@@ -34,7 +34,9 @@ final class MainViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-
+        let settingsVC = segue.source as? SettingsViewController
+        minimumValueLabel.text = settingsVC?.minimumValueTF.text
+        maximumValueLabel.text = settingsVC?.maximumValueTF.text
     }
 
 }
