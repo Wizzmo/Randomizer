@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1015.2" y="-2.2488755622188905"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="Icz-2U-NOD">
             <objects>
-                <viewController id="DQD-I2-AiF" sceneMemberID="viewController">
+                <viewController id="DQD-I2-AiF" customClass="SettingsViewController" customModule="Randomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XVW-Q4-djH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,6 +136,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButtonAction" destination="DQD-I2-AiF" eventType="touchUpInside" id="qfb-NQ-HQf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -150,6 +153,10 @@
                             <constraint firstItem="wbm-4I-jUf" firstAttribute="leading" secondItem="H8A-tU-Ze3" secondAttribute="leading" constant="60" id="t1b-6B-Rdy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="maximumValueTF" destination="JM4-Xp-Bf4" id="W8h-hR-ck8"/>
+                        <outlet property="minimumValueTF" destination="hg4-jq-e8n" id="7WE-lO-ndG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqX-Ng-OH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
